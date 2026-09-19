@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un piccolo sito dedicato a Elena, con auguri, ricordi e un quiz d'amore.">
+  <meta name="theme-color" content="#0d0204">
+  <title>Per Elena ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="photo-slideshow" aria-hidden="true">
+    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80')"></div>
+  </div>
+
+  <main class="container">
+    <header><h1>Per Elena ❤️</h1><p>Il mio punto fermo, la mia felicità</p></header>
+
+    <section class="card">
+      <div class="vinyl-container"><div class="vinyl-record" aria-label="Disco vinile animato"></div><div class="song-title">Die for You</div><div class="song-artist">The Weeknd • La nostra canzone 🎧</div></div>
+    </section>
+
+    <section class="card" id="quiz-card">
+      <h2>✨ Gioco di Coppia: Il Quiz ✨</h2>
+      <div id="quiz-container"><p id="quiz-question"></p><div id="quiz-options"></div></div>
+    </section>
+
+    <div class="photo-window"><span>📸 I nostri ricordi sullo sfondo</span></div>
+
+    <section class="card"><h2>💌 Per Te, Bimba Mia</h2><p class="letter-text">Elena, certi momenti restano impressi per sempre. Da quando sei entrata nella mia vita ogni giorno ha un colore diverso, più vivo, più bello.
+
+Grazie per ogni risata, per ogni messaggio e per il modo unico che hai di farmi sentire speciale. Oggi è la tua giornata e voglio solo ricordarti quanto sei importante per me.
+
+Tanti auguri di buon compleanno, bimba mia. ❤️</p></section>
+
+    <div class="interactive-btns"><button class="btn-card" data-modal="manco">💭 Quanto ti manco?</button><button class="btn-card" data-modal="sorriso">😊 Ho bisogno di un sorriso</button></div>
+
+    <section class="card"><h2>⏳ Ci conosciamo esattamente da...</h2><p class="subtext">Dal 22 Agosto 2026, ore 11:57</p><div class="timer-grid"><div class="timer-box"><strong id="r-days">0</strong><span>Giorni</span></div><div class="timer-box"><strong id="r-hours">00</strong><span>Ore</span></div><div class="timer-box"><strong id="r-minutes">00</strong><span>Minuti</span></div><div class="timer-box"><strong id="r-seconds">00</strong><span>Secondi</span></div></div></section>
+
+    <section class="card special-card"><h2>🎉 È Mezzanotte! Buon Compleanno! 🎉</h2><p class="midnight-text">Il tuo momento speciale è arrivato ❤️</p><button class="btn-card full-width" data-modal="mezzanotte">🎁 Apri il Messaggio di Auguri 🌙</button></section>
+
+    <section class="card"><p class="poem-text">“Tra mille sguardi ho scelto il tuo,<br>tra mille storie la nostra.<br>Ogni secondo insieme è un regalo<br>e oggi festeggiamo te:<br>il mio punto fermo, la mia felicità.”</p></section>
+    <footer>Con tutto l'amore del mondo, Vincenzo ❤️</footer>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-text"><div class="modal-content"><button class="close-btn" id="close-modal" aria-label="Chiudi">&times;</button><div id="modal-text"></div></div></div>
+</body>
+</html>
